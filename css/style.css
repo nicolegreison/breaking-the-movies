@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   background-color: #111;
 }
 
-/* Header fixo */
 header {
   display: flex;
   justify-content: space-between;
@@ -34,7 +32,6 @@ header a {
   font-weight: bold;
 }
 
-/* Hero com vídeo */
 #hero {
   position: relative;
   height: 100vh;
@@ -79,7 +76,6 @@ header a {
   font-size: 1.6rem;
 }
 
-/* Sobre-destaque com texto sobreposto */
 #sobre-destaque {
   position: relative;
   margin: 0;
@@ -101,8 +97,6 @@ header a {
   font-size: 2rem; /* aumenta o tamanho da fonte */
 }
 
-
-/* Seções estilo MUBI */
 .section-style {
   padding: 60px 20px;
   background-color: #111;
@@ -115,7 +109,6 @@ header a {
   border-radius: 10px;
 }
 
-/* Catálogo de filmes */
 .cards {
   display: flex;
   gap: 20px;
