@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #111;
+}
+
+/* Header fixo */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Hero com vídeo */
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: -5%;
+  left: -18%;
+  width: 110vw;
+  height: 110vh;
+  z-index: -1;
+}
+
+.video-background iframe {
+  width: 110vw; 
+  height: 110vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 8px;
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+}
+
+/* Sobre-destaque com texto sobreposto */
+#sobre-destaque {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#sobre-destaque img {
+  width: 100%;
+  display: block;
+}
+
+#sobre-destaque .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  font-size: 2rem; /* aumenta o tamanho da fonte */
+}
+
+
+/* Seções estilo MUBI */
+.section-style {
+  padding: 60px 20px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.section-style img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Catálogo de filmes */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card p {
+  padding: 10px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  margin-top: 50px;
+}
+
+
+
