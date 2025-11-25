@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BreakingTheMovies - Página Inicial</title>
+<title>BreakingTheMovies</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 <header>
   <div class="logo">BreakingTheMovies</div>
@@ -16,10 +17,15 @@
 </header>
 
 <main>
+
   <section id="hero">
     <div class="video-background">
-      <iframe src="https://www.youtube.com/embed/ozK4S-RwKgw?start=15&autoplay=1&mute=1&loop=1&playlist=ozK4S-RwKgw" frameborder="0" allow="autoplay; fullscreen"></iframe>
+      <iframe src="https://www.youtube.com/embed/ozK4S-RwKgw?start=15&autoplay=1&mute=1&loop=1&playlist=ozK4S-RwKgw" 
+              frameborder="0" 
+              allow="autoplay; fullscreen">
+      </iframe>
     </div>
+
     <div class="hero-content">
       <h1>CINEMA COMO NENHUM OUTRO</h1>
       <p>Escolha seus filmes favoritos e descubra clássicos e novidades.</p>
@@ -33,19 +39,37 @@
     </div>
   </section>
 
-  <section id="informacao" class="section-style">
-    <div class="text">
-      <h2>Mais Informações</h2>
-      <p>Aqui você pode colocar qualquer conteúdo textual que desejar.</p>
+  <section class="catalogo-intro">
+    <img class="filme-logo" src="img/pngwing.com.png" alt="Rolo de Filme">
+
+    <div class="catalogo-texto">
+        <h2>
+            UM CATÁLOGO CURADO PARA VER E REVER.<br>
+            DIRETORES QUE MOLDARAM O CINEMA.<br>
+            PRODUÇÕES INDEPENDENTES, JOIAS ESCONDIDAS E SUCESSOS ACLAMADOS.<br>
+            TUDO EM UM SÓ LUGAR. DO CLÁSSICO AO CONTEMPORÂNEO.
+        </h2>
     </div>
-  </section>
+</section>
 
   <section id="catalogo" class="section-style">
     <h2>Catálogo de Filmes</h2>
     <div class="cards">
-      <div class="card"><img src="img/filme4.jpg" alt="Filme 4"><p>Filme 4</p></div>
-      <div class="card"><img src="img/filme5.jpg" alt="Filme 5"><p>Filme 5</p></div>
-      <div class="card"><img src="img/filme6.jpg" alt="Filme 6"><p>Filme 6</p></div>
+      <div class="card">
+        <div class="play-button">▸</div>
+        <img src="img/img2.jpg" alt="Filme 4">
+        <p>Filme 4</p>
+      </div>
+
+      <div class="card">
+        <img src="img/filme5.jpg" alt="Filme 5">
+        <p>Filme 5</p>
+      </div>
+
+      <div class="card">
+        <img src="img/filme6.jpg" alt="Filme 6">
+        <p>Filme 6</p>
+      </div>
     </div>
   </section>
 
@@ -54,6 +78,17 @@
 <footer>
   <p>2025 BreakingTheMovies</p>
 </footer>
+
+<div id="movieModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2>Assista a este filme</h2>
+    <p>Faça login para continuar</p>
+
+    <button class="login-button">Fazer Login</button>
+  </div>
+</div>
 
 <script src="js/scripts.js"></script>
 </body>

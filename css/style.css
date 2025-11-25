@@ -42,14 +42,15 @@ header a {
 .video-background {
   position: absolute;
   top: -5%;
-  left: -18%;
+  left: -10%;
   width: 110vw;
   height: 110vh;
+  transform: scale(1.2);
   z-index: -1;
 }
 
 .video-background iframe {
-  width: 110vw; 
+  width: 110vw;
   height: 110vh;
   object-fit: cover;
   position: absolute;
@@ -60,7 +61,6 @@ header a {
 .hero-content {
   position: relative;
   text-align: center;
-  color: white;
   top: 50%;
   transform: translateY(-50%);
   padding: 0 1rem;
@@ -78,8 +78,6 @@ header a {
 
 #sobre-destaque {
   position: relative;
-  margin: 0;
-  padding: 0;
 }
 
 #sobre-destaque img {
@@ -92,21 +90,71 @@ header a {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  color: white;
+  font-size: 2rem;
   text-align: left;
-  font-size: 2rem; /* aumenta o tamanho da fonte */
+}
+
+#logo-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;          
+  padding: 0;        
+  padding-top: 5px;  
+  padding-bottom: 5px;
+  background: #fff;
+}
+
+.logo-img img {
+  width: 110px;     
+}
+
+.texto-logo h2 {
+  font-size: 14px;   
+  line-height: 1.1; 
+  color: #111 !important;
+  max-width: 450px;  
+}
+
+.catalogo-intro {
+  background: #ffffff;
+  padding: 10px 20px;   
+  display: flex;
+  align-items: center;
+  gap: 20px;            
+}
+
+.filme-logo {
+  width: 220px;
+  height: auto;
+}
+
+.catalogo-texto {
+  margin-left: 40px;  
+}
+
+.catalogo-texto h2 {
+  font-size: 22px;   
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;       
+  max-width: 600px;
+  text-transform: uppercase;
+}
+
+.catalogo-intro,
+.catalogo-intro * {
+  color: #111 !important;
+}
+
+.catalogo-intro,
+.catalogo-intro * {
+  color: #111 !important;
 }
 
 .section-style {
   padding: 60px 20px;
-  background-color: #111;
-  color: white;
   text-align: center;
-}
-
-.section-style img {
-  max-width: 100%;
-  border-radius: 10px;
 }
 
 .cards {
@@ -124,6 +172,7 @@ header a {
   text-align: center;
   transition: transform 0.3s;
   cursor: pointer;
+  position: relative;
 }
 
 .card:hover {
@@ -132,20 +181,65 @@ header a {
 
 .card img {
   width: 100%;
-  display: block;
 }
 
 .card p {
   padding: 10px 0;
 }
 
-/* Footer */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover .play-button {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  border: 1px solid #444;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.login-button {
+  background: #ff0044;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
   padding: 20px;
   background-color: #222;
   margin-top: 50px;
 }
-
-
-

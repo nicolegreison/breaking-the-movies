@@ -1,4 +1,4 @@
-#  - Projeto Web
+#  - Projeto CPW
 
 ## Integrantes
 - Nicole Greison — Função: CSS, layout e design
@@ -16,15 +16,5 @@ Website estilo locadora de filmes, inspirado na MUBI. Catálogo de filmes, easte
 - `img/` - Imagens
 - `fanpage/index.html` - Fanpage secreta Linkin Park
 
-## Como rodar localmente
-1. Clonar o repo:
-   `git clone https://github.com/seu-usuario/seu-usuario-github.io.git`
-2. Abrir `index.html` no navegador
-
-## Contribuições
-- Nicole Greison — Função: CSS, layout e design
-- Eduardo coloca seu sobrenome — Função: HTML, conteúdo, JS (Easter Egg LP)
-- Leonardo coloca o seu tb — Função: Testes e imagens
-
 ## Link do site
-https://seu-usuario.github.io
+COLOCAR AQUIIII
