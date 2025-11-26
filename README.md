@@ -2,7 +2,7 @@
 
 ## Integrantes
 - Nicole Greison — Função: CSS, layout e design
-- Eduardo coloca seu sobrenome — Função: HTML, conteúdo, JS (Easter Egg LP)
+- Eduardo Cullmann — Função: HTML, conteúdo, JS (Easter Egg LP)
 - Leonardo coloca o seu tb — Função: Testes e imagens
 
 ## Sumário do projeto
