@@ -1,0 +1,157 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, #000);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* SOBRE / DESTAQUE */
+#sobre-destaque {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+#sobre-destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sobre-destaque .text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+#sobre-destaque h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* CATÁLOGO INTRO */
+.catalogo-intro {
+    background: #fffefe;
+    padding: 60px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.catalogo-intro img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.catalogo-texto h2 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+/* ABAS */
+.tabs {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    background: #000;
+}
+
+.tab {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.tab.active {
+    opacity: 1;
+    border-bottom: 2px solid white;
+}
+
+/* GRID */
+.tab-content {
+    display: none;
+    padding: 40px;
+    background: #111;
+    color: white;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.genre-title {
+    margin: 20px 0 10px;
+    font-size: 1.6rem;
+    opacity: 0.9;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.film-card img {
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.film-card img:hover {
+    transform: scale(1.04);
+}

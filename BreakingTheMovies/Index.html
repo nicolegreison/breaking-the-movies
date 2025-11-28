@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakingTheMovies</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header class="hero">
+        
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/Betty.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">BreakingTheMovies</h1>
+            <p class="hero-sub">Novos filmes selecionados diariamente.</p>
+        </div>
+    </header>
+
+    <!-- SESSÃO: SOBRE / DESTAQUE -->
+    <section id="sobre-destaque">
+        <img src="img/img1.jpg" alt="Foto de destaque">
+
+        <div class="text-overlay">
+            <h2>
+                QUALQUER FILME.<br>
+                QUALQUER TELA.<br>
+                QUALQUER MOMENTO.<br>
+                QUALQUER LUGAR.
+            </h2>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CATÁLOGO INTRO -->
+    <section class="catalogo-intro">
+        <img class="filme-logo" src="img/Absolute.webp" alt="Rolo de Filme">
+
+        <div class="catalogo-texto">
+            <h2>
+                UM CATÁLOGO CURADO PARA VER E REVER.<br>
+                DIRETORES QUE MOLDARAM O CINEMA.<br>
+                PRODUÇÕES INDEPENDENTES, JOIAS ESCONDIDAS E SUCESSOS ACLAMADOS.<br>
+                TUDO EM UM SÓ LUGAR. DO CLÁSSICO AO CONTEMPORÂNEO.
+            </h2>
+        </div>
+    </section>
+
+    <!-- ABAS -->
+    <nav class="tabs">
+        <button class="tab active" data-tab="catalogo">Em Catálogo</button>
+        <button class="tab" data-tab="coming">Em breve</button>
+        <button class="tab" data-tab="last">Última chance de assistir</button>
+    </nav>
+
+    <!-- CONTEÚDO DAS ABAS -->
+    <section class="tab-content active" id="catalogo">
+
+        <h2 class="genre-title">Drama</h2>
+        <div class="grid">
+            <div class="film-card"><img src="img/img2.jpg"><h3>Lake Mungo (2008)</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?102"><h3>As Sombras da Cidade</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?103"><h3>Retrato em Cinzas</h3></div>
+        </div>
+
+        <h2 class="genre-title">Romance</h2>
+        <div class="grid">
+            <div class="film-card"><img src="https://picsum.photos/400/600?104"><h3>Luzes de Primavera</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?105"><h3>Entre Nós</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?110"><h3>Coisas</h3></div>
+        </div>
+
+        <h2 class="genre-title">Suspense</h2>
+        <div class="grid">
+            <div class="film-card"><img src="https://picsum.photos/400/600?106"><h3>Noites Sem Fim</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?107"><h3>A Casa Sem Voz</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?108"><h3>Ponto Cego</h3></div>
+        </div>
+    </section>
+
+    <section class="tab-content" id="coming">
+        <div class="grid">
+            <div class="film-card"><img src="https://picsum.photos/400/600?109"><h3>Castelos em chamas</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?112"><h3>O frango amigo</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?111"><h3>Frank, a calopsita assassina</h3></div>
+        </div>
+    </section>
+
+    <section class="tab-content" id="last">
+        <div class="grid">
+            <div class="film-card"><img src="https://picsum.photos/400/600?111"><h3>A ida de Tarcília</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?114"><h3>A volta de Nathaniel</h3></div>
+            <div class="film-card"><img src="https://picsum.photos/400/600?113"><h3>A fúria de Edmundo</h3></div>
+        </div>
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
