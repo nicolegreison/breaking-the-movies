@@ -151,10 +151,10 @@
 .tab-content {
     display: none;
     padding: 40px 20px;
-    background:#ffffff;
-;
+    background: #ffffff;
     color: #7e290d;
 }
+
 
 .tab-content.active {
     display: block;
